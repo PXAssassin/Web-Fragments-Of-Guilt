@@ -1,16 +1,30 @@
-# React + Vite
+# Fragments of Guilty - Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido al repositorio de la página web del videojuego **Fragments of Guilty**.
 
-Currently, two official plugins are available:
+Este proyecto ha sido creado utilizando **React, Vite y Tailwind CSS**, ofreciendo una experiencia inmersiva, oscura y responsiva para mostrar los avances (DevLogs) del desarrollo del juego.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Requisitos previos
 
-## React Compiler
+Para poder ejecutar y modificar este proyecto en tu entorno local, asegúrate de tener instalado:
+- [Node.js](https://nodejs.org/es/) (versión 18 o superior recomendada)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Instalación y Configuración
 
-## Expanding the ESLint configuration
+1. Abre una terminal en la carpeta raíz de este proyecto.
+2. Instala las dependencias necesarias ejecutando el siguiente comando:
+   ```bash
+   npm install
+   ```
+3. Inicia el servidor de desarrollo local ejecutando:
+   ```bash
+   npm run dev
+   ```
+4. Abre el enlace que aparece en la terminal (por lo general `http://localhost:5173/`) en tu navegador web para ver la página en vivo.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📚 Documentación y Guía de Uso
+
+Si deseas saber cómo funciona la estructura de carpetas del proyecto o necesitas instrucciones paso a paso sobre cómo **añadir nuevas semanas, cartas e imágenes a los DevLogs**, por favor consulta el archivo **`Documentacion_Proyecto.txt`** que se encuentra en la carpeta raíz del proyecto. Ahí está todo explicado al detalle.
+
+---
+*Desarrollado con React y Vite.*

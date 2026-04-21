@@ -1,9 +1,9 @@
 ESTRUCTURA DEL PROYECTO Y ARCHIVOS
 
-Directorio principal: c:\Users\gl391\Downloads\Opcion1
+
 
 1. Archivos en la raíz del proyecto:
-- .gitignore: Archivo para decirle a Git (control de versiones) qué archivos o carpetas ignorar para no subirlos al repositorio.
+- .gitignore: Archivos o carpetas ignorar para no subirlos al repo.
 - README.md: Archivo de texto con formato Markdown para documentar información general del proyecto.
 - eslint.config.js: Archivo de configuración de ESLint para el análisis de código (linting) y mantener buenas prácticas de programación.
 - index.html: Archivo HTML principal de la aplicación donde se inyecta el código de React.
@@ -13,15 +13,18 @@ Directorio principal: c:\Users\gl391\Downloads\Opcion1
 - vite.config.js: Archivo de configuración de Vite, el empaquetador (bundler) de alta velocidad utilizado para el desarrollo y construcción del proyecto.
 
 2. Carpetas en la raíz del proyecto:
-- node_modules/: Carpeta generada automáticamente que contiene todas las dependencias y librerías instaladas del proyecto. No se debe modificar manualmente.
+- node_modules/: Carpeta generada automáticamente que contiene todas las dependencias y librerías instaladas del proyecto.
+
 - public/: Contiene archivos públicos que no son procesados por Vite. Se sirven tal cual en el navegador.
   - favicon.svg: Icono de la pestaña del navegador.
   - icons.svg: Archivo que contiene iconos en formato SVG.
+
   - images/: Carpeta designada para guardar las imágenes públicas.
     - devlog/: Contiene las imágenes organizadas por semanas para los devlogs (cartas por semana).
     - hero/: Contiene las imágenes para la sección principal (hero carousel).
+
 - src/: Carpeta principal que contiene todo el código fuente de React.
-  - App.jsx y App.css: Componente principal de React que envuelve la aplicación y sus estilos básicos.
+  - App.jsx:Es el componente principal que agrupa todo.(header, carrusel, Devlogs, memoria del programa, footer)
   - main.jsx: Punto de entrada principal de la aplicación React donde se renderiza la app en el index.html.
   - index.css: Archivo de estilos globales donde se importan las directivas base de Tailwind CSS.
   - assets/: Carpeta para imágenes u otros recursos estáticos que sí son procesados por Vite (a diferencia de public).
@@ -34,13 +37,10 @@ Directorio principal: c:\Users\gl391\Downloads\Opcion1
     - devlogData.js: Archivo crítico que contiene toda la información de las semanas, títulos, descripciones, rutas de imágenes y textos de los devlogs.
 
 
-=============================================================================
-INSTRUCCIONES PARA AÑADIR UNA NUEVA SEMANA Y CARTAS AL DEVLOG
-=============================================================================
+============================================================================
+AÑADIR UNA NUEVA SEMANA Y CARTAS AL DEVLOG
 
-Toda la información que se muestra en la sección de Devlogs se controla desde un único archivo.
-Sigue estos pasos para añadir contenido:
-
+Toda la información que se muestra en la sección de Devlogs se controla desde un único archivo:
 1. En el archivo: `src/data/devlogData.js`
 2. Dentro verás una variable llamada `devlogData` que es una lista (array) de objetos, donde cada objeto es una semana.
 3. Para añadir una nueva semana (por ejemplo, la semana 4), ve al final de la lista, añade una coma `,` después de la última llave `}` y pega una nueva estructura como esta:
@@ -67,22 +67,21 @@ Sigue estos pasos para añadir contenido:
     ]
   }
 
-Nota: Asegúrate de que los `id` de las cartas sean únicos (por ejemplo, "w4-c1", "w4-c2" para la semana 4).
+Hay que asegúrarse de que los `id` de las cartas sean únicos (por ejemplo, "w4-c1", "w4-c2" para la semana 4).
 
 
 =============================================================================
-DÓNDE Y CÓMO AÑADIR LAS IMÁGENES
-=============================================================================
+ AÑADIR LAS IMÁGENES DE LAS CARTAS DEL DEVLOG
 
-Para que las imágenes se carguen correctamente y el proyecto esté ordenado, debes seguir estas reglas:
 
-1. Dónde guardarlas en tus carpetas:
-   - Navega a la carpeta `public/images/devlog/` en tu proyecto.
-   - Crea una nueva subcarpeta para la semana que estás añadiendo (por ejemplo: `week4`).
+Las imágenes  y el proyecto esté ordenado, para subirlas hay que guardarlas en las carpetas
+
+1. Para guardarlas:
+   -`public/images/devlog/`
+   - Se crea una nueva subcarpeta para la semana que estás añadiendo (por ejemplo: `week5`).
    - Pega ahí tus archivos de imagen (ej. `mi_imagen_1.jpg`, `captura.png`, etc.).
 
-2. Cómo enlazarlas en el código:
-   - Cuando edites el archivo `src/data/devlogData.js` y estés configurando una carta, debes poner la ruta en la propiedad `image`.
-   - La ruta debe comenzar siempre con `/images/` (ya que la carpeta public es la raíz para el navegador).
+2. Se enlaza en el código:
+   - Cuando se edite el archivo `src/data/devlogData.js` y estés configurando una carta, debes poner la ruta en la propiedad `image`.
    - Ejemplo: Si guardaste tu imagen en `public/images/devlog/week4/foto.jpg`, en el código debes escribir exactamente:
      image: "/images/devlog/week4/foto.jpg"
