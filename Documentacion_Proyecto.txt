@@ -18,7 +18,7 @@ Directorio principal: c:\Users\gl391\Downloads\Opcion1
   - favicon.svg: Icono de la pestaña del navegador.
   - icons.svg: Archivo que contiene iconos en formato SVG.
   - images/: Carpeta designada para guardar las imágenes públicas.
-    - devlog/: Contiene las imágenes organizadas por semanas para los devlogs.
+    - devlog/: Contiene las imágenes organizadas por semanas para los devlogs (cartas por semana).
     - hero/: Contiene las imágenes para la sección principal (hero carousel).
 - src/: Carpeta principal que contiene todo el código fuente de React.
   - App.jsx y App.css: Componente principal de React que envuelve la aplicación y sus estilos básicos.
@@ -41,7 +41,7 @@ INSTRUCCIONES PARA AÑADIR UNA NUEVA SEMANA Y CARTAS AL DEVLOG
 Toda la información que se muestra en la sección de Devlogs se controla desde un único archivo.
 Sigue estos pasos para añadir contenido:
 
-1. Abre el archivo: `src/data/devlogData.js`
+1. En el archivo: `src/data/devlogData.js`
 2. Dentro verás una variable llamada `devlogData` que es una lista (array) de objetos, donde cada objeto es una semana.
 3. Para añadir una nueva semana (por ejemplo, la semana 4), ve al final de la lista, añade una coma `,` después de la última llave `}` y pega una nueva estructura como esta:
 
