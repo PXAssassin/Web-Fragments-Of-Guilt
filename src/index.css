@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar for a more integrated look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: theme('colors.gameBg');
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme('colors.gameCard');
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.gameAccent');
+}
+
+/* Swiper custom styles to blend with the dark fantasy theme */
+.swiper-pagination-bullet {
+  background: theme('colors.gameText') !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: theme('colors.gameAccent') !important;
+  opacity: 1 !important;
+  box-shadow: 0 0 10px theme('colors.gameGlow');
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: theme('colors.gameText') !important;
+  text-shadow: 0 0 10px theme('colors.gameGlow');
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: theme('colors.gameAccent') !important;
+  transform: scale(1.1);
+}
+
+/* Custom utility class for smooth glowing effect */
+.glow-effect {
+  box-shadow: 0 0 15px theme('colors.gameGlow');
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 25px theme('colors.gameAccent');
+}
+
+/* Animations */
+@keyframes slow-zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 15s linear infinite alternate;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    text-shadow: 0 0 10px theme('colors.gameAccent'), 0 0 20px theme('colors.gameAccent');
+  }
+  50% {
+    text-shadow: 0 0 20px theme('colors.gameGlow'), 0 0 30px theme('colors.gameGlow');
+  }
+}
+
+.text-glow-animated {
+  animation: pulse-glow 3s infinite alternate;
+}
