@@ -8,7 +8,7 @@ import DevLogModal from './components/devlog/DevLogModal';
 import { devlogData } from './data/devlogData';
 
 function App() {
-  const [activeWeek, setActiveWeek] = useState(1);
+  const [activeWeek, setActiveWeek] = useState(8);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
 

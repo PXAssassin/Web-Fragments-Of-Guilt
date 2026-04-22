@@ -149,11 +149,11 @@ export const devlogData = [
         fullText: `
           Se establecieron las primeras bases técnicas del proyecto:
 
-          🔹 **Control de versiones**
+          **Control de versiones**
           - Creación del repositorio en GitHub  
           - Implementación de ramas de trabajo para el equipo  
 
-          🔹 **Arquitectura del sistema**
+          **Arquitectura del sistema**
           - Abstracción de atributos del personaje principal  
 
           Esta estructura permite gestionar el guardado de datos y facilita la modificación o expansión de propiedades del jugador en el futuro.
@@ -246,11 +246,11 @@ export const devlogData = [
         fullText: `
         Se avanzó tanto en diseño de interfaz como en programación de sistemas:
 
-        🔹 **Menú principal**
+        **Menú principal**
         - Definición estética con tonalidades frías (azul y morado)  
         - Diseño de una interfaz simple alineada al estilo del juego  
 
-        🔹 **Implementación de scripts**
+        **Implementación de scripts**
         Basados en la abstracción definida anteriormente:
 
         - Sistema de inventario  
@@ -290,10 +290,10 @@ export const devlogData = [
         fullText: `
           Se avanzó tanto en el diseño de niveles como en la programación de los sistemas del personaje:
 
-          🔹 **Diseño de niveles**
+          **Diseño de niveles**
           - Estructura de los tres niveles del juego  
 
-          🔹 **Programación**
+          **Programación**
           - Implementación del movimiento del personaje  
           - Configuración del Animator  
           - Conexión con el sistema de estados  
