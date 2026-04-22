@@ -8,7 +8,7 @@ import DevLogModal from './components/devlog/DevLogModal';
 import { devlogData } from './data/devlogData';
 
 function App() {
-  const [activeWeek, setActiveWeek] = useState(1);
+  const [activeWeek, setActiveWeek] = useState(8);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
 
@@ -52,10 +52,10 @@ function App() {
               className="text-center mb-16"
             >
               <h2 className="font-cinzel text-4xl md:text-5xl font-bold text-gameText mb-4 tracking-wider text-glow-animated">
-                Development Log
+                Bitacora de Desarrollo
               </h2>
               <p className="font-poppins text-gameGlow text-lg max-w-2xl mx-auto">
-                Follow our journey as we build this dark fantasy world. Explore the progress week by week.
+                Sigue nuestro viaje mientras construimos este oscuro mundo de fantasía. Descubre el progreso semana a semana.
               </p>
             </motion.div>
 

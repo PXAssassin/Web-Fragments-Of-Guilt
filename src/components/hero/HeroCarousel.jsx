@@ -20,20 +20,20 @@ const HeroCarousel = () => {
     {
       id: 1,
       src: "/images/hero/hero1.jpg",
-      title: "Awaken from the Void",
-      subtitle: "A forgotten god seeks their lost memories."
+      title: "Despierta del Vacio",
+      subtitle: "Una diosa olvidada busca sus recuerdos perdidos."
     },
     {
       id: 2,
       src: "/images/hero/hero2.jpg",
-      title: "Explore Ancient Ruins",
-      subtitle: "Uncover the secrets of a shattered world."
+      title: "Explora antiguas ruinas olvidadas",
+      subtitle: "Descubre los secretos de un mundo destrozado."
     },
     {
       id: 3,
       src: "/images/hero/hero3.jpg",
-      title: "Reclaim Your Power",
-      subtitle: "Face the darkness that stole your past."
+      title: "Reclama tu poder",
+      subtitle: "Enfréntate a la oscuridad que robó tu pasado."
     }
   ];
 
@@ -58,15 +58,15 @@ const HeroCarousel = () => {
           <SwiperSlide key={image.id}>
             <div className="relative h-full w-full overflow-hidden">
               {/* Background Image with Slow Zoom */}
-              <img 
-                src={image.src} 
-                alt={image.title} 
+              <img
+                src={image.src}
+                alt={image.title}
                 className={`absolute inset-0 w-full h-full object-cover opacity-60 ${activeIndex === index ? 'animate-slow-zoom' : ''}`}
               />
               {/* Gradient Overlays */}
               <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent"></div>
               <div className="absolute inset-0 bg-gradient-to-t from-gameBg via-transparent to-gameBg/50"></div>
-              
+
               {/* Text Overlay with AnimatePresence for smooth entering/exiting */}
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
                 <AnimatePresence mode="wait">
