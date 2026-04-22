@@ -302,5 +302,82 @@ export const devlogData = [
                 `
       }
     ]
+  },
+  {
+    week: 11,
+    title: "Pruebas, integración y ajustes",
+    cards: [
+      {
+        id: "w11-c1",
+        title: "Programación / UI",
+        description: "Pruebas funcionales y ajustes de sistemas.",
+        image: "/images/devlog/week11/card1.jpg",
+        fullText: `
+        Se iniciaron las primeras pruebas funcionales del proyecto:
+
+        **Persistencia**
+        - Verificación del funcionamiento del GameManager entre escenas  
+        - Obtención de referencias al protagonista en cada escena  
+
+        **Movimiento**
+        - Pruebas del sistema de movimiento del personaje  
+        - Ajustes en scripts debido a conflictos con animaciones  
+
+        **Inventario**
+        - Testeo del sistema de inventario  
+        - Validación del almacenamiento de objetos  
+
+        Estas pruebas permitieron detectar errores y mejorar la estabilidad del sistema base.
+              `
+      },
+
+      {
+        id: "w11-c2",
+        title: "Animación y arte",
+        description: "Desarrollo de animaciones y diseño de arma.",
+        image: "/images/devlog/week11/card2.jpg",
+        fullText: `
+        Se avanzó en el apartado visual y de animación:
+
+        - Diseño de la lanza principal de la protagonista  
+        - Creación de animaciones para enemigos básicos  
+
+        Estos elementos fortalecen tanto la identidad visual como la respuesta del juego en combate.
+              `
+      },
+
+      {
+        id: "w11-c3",
+        title: "Integración de nivel",
+        description: "Paso del diseño conceptual al entorno digital.",
+        image: "/images/devlog/week11/card3.jpg",
+        fullText: `
+          Se trasladó el diseño de nivel al entorno del motor:
+
+          - Ubicación del protagonista en escena  
+          - Posicionamiento de enemigos en el nivel  
+          - Organización de escenas del juego  
+
+          Esto marca la transición de planificación a implementación jugable.
+                `
+      },
+
+      {
+        id: "w11-c4",
+        title: "Sistema y depuración",
+        description: "Optimización y estabilidad del código.",
+        image: "/images/devlog/week11/card4.jpg",
+        fullText: `
+        Se trabajó en la integración técnica y mejora del sistema:
+
+        - Configuración del sistema de cámaras  
+        - Estructuración del flujo global mediante GameManager  
+        - Ajustes en la lógica de salud  
+        - Corrección de errores en la comunicación entre scripts  
+
+        Estos cambios permiten una base más estable antes de iniciar el balance del juego.
+              `
+      }
+    ]
   }
 ];
