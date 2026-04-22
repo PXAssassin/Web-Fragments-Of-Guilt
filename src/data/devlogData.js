@@ -6,98 +6,300 @@
  */
 export const devlogData = [
   {
-    week: 1,
-    title: "The Awakening",
+    week: 8,
+    title: "Asignación de responsabilidades",
     cards: [
       {
-        id: "w1-c1",
-        title: "Initial Concepts",
-        description: "Exploring the dark, mystical atmosphere for the starting zone. We wanted a feeling of isolation and ancient magic.",
-        image: "/images/devlog/week1/card1.jpg",
-        fullText: "The initial concepts focused on creating a cold, unwelcoming environment that still felt deeply magical. The forgotten god awakens here, surrounded by the remnants of a once-great civilization. We used heavy purple and blue tones to set the mood."
-      },
-      {
-        id: "w1-c2",
-        title: "Memory Fragments",
-        description: "Designing the visual language for memory recovery mechanics.",
-        image: "/images/devlog/week1/card2.jpg",
-        fullText: "Memory fragments are the core collectible. We designed them to look like shattered glass that glows from within, representing the broken mind of our protagonist. Picking them up triggers a flash of past events."
-      },
-      {
-        id: "w1-c3",
-        title: "Movement Prototypes",
-        description: "Testing weight and momentum of a god who has lost their power.",
-        image: "/images/devlog/week1/card3.jpg",
-        fullText: "We want the player to feel powerful yet constrained. The initial movement prototype features heavy, impactful animations but lacks the swiftness that the character will regain later in the game."
-      },
-      {
-        id: "w1-c4",
-        title: "MACHU",
-        description: "Testing weight and momentum of a god who has lost their power.",
-        image: "/images/devlog/week1/card3.jpg",
-        fullText: "We want the player to feel powerful yet constrained. The initial movement prototype features heavy, impactful animations but lacks the swiftness that the character will regain later in the game."
-      },
-      {
-        id: "w1-c5",
-        title: "Valentina",
-        description: "Testing weight and momentum of a god who has lost their power.",
-        image: "/images/devlog/week1/card3.jpg",
-        fullText: "We want the player to feel powWe want the player to feel powWe want the player to feel powWe want the player to feel powWe want the player to feel powWe want the player to feel powWe want the player to feel powWe want the player to feel powWe want the player to feel powerful yet constrained. The initial movement prototype features heavy, impactful animations but lacks the swiftness that the character will regain later in the game.We want the player to feel powerful yet constrained. The initial movement prototype features heavy, impactful animations but lacks the swiftness that the character will regain later in the game.We want the player to feel powerful yet constrained. The initial movement prototype features heavy, impactful animations but lacks the swiftness that the character will regain later in the game.We want the player to feel powerful yet constrained. The initial movement prototype features heavy, impactful animations but lacks the swiftness that the character will regain later in the game.We want the player to feel powerful yet constrained. The initial movement prototype features heavy, impactful animations but lacks the swiftness that the character will regain later in the game.We want the player to feel powerful yet constrained. The initial movement prototype features heavy, impactful animations but lacks the swiftness that the character will regain later in the game.We want the player to feel powerful yet constrained. The initial movement prototype features heavy, impactful animations but lacks the swiftness that the character will regain later in the game.We want the player to feel powerful yet constrained. The initial movement prototype features heavy, impactful animations but lacks the swiftness that the character will regain later in the game."
-      }
+        id: "w8-c1",
+        title: "Animación",
+        description: "Definición del trabajo visual y animaciones del juego.",
+        image: "/images/devlog/week8/card1.jpg",
+        fullText: `
+                    Se asigna el área de animación para desarrollar el apartado visual de los personajes:
 
-    ]
-  },
-  {
-    week: 2,
-    title: "The Dungeons",
-    cards: [
-      {
-        id: "w2-c1",
-        title: "Environment Art",
-        description: "Creating the eerie, crimson-lit dungeons where the first enemies await.",
-        image: "/images/devlog/week2/card1.jpg",
-        fullText: "The first major dungeon shifts the palette towards reds and deep blacks. This contrast helps highlight dangers and creates a sense of dread."
+                    - Dibujo del personaje principal  
+                    - Animación del personaje principal  
+                    - Diseño de enemigos  
+                    - Animación de enemigos  
+
+                    El objetivo es establecer una base visual coherente para el desarrollo del juego.
+                    `
       },
+
       {
-        id: "w2-c2",
-        title: "Enemy AI: The Shades",
-        description: "Programming the behavior of formless enemies that lurk in the shadows.",
-        image: "/images/devlog/week2/card2.jpg",
-        fullText: "The Shades are programmed to avoid direct light sources and attempt to flank the player. They are weak individually but dangerous in groups, representing the protagonist's forgotten fears."
+        id: "w8-c2",
+        title: "Programación",
+        description: "Planificación de la lógica central del juego.",
+        image: "/images/devlog/week8/card2.jpg",
+        fullText: `
+              Se asigna al equipo de programadores la definición de los sistemas principales del juego:
+
+              **Sistema del personaje**
+              - Vida y stamina  
+              - Inventario  
+              - Habilidades  
+
+              **Sistema de guardado**
+              - Guardado de progreso del jugador  
+              - Carga desde el último punto de guardado  
+
+              **Lógica del juego**
+              - Cambio entre escenas  
+              - Comportamiento de enemigos:
+                - Patrullaje  
+                - Ataque  
+
+              **UI**
+              - Interacción con la interfaz  
+
+              Esto permitirá construir la base técnica del proyecto.
+                    `
       },
+
       {
-        id: "w2-c3",
-        title: "Combat Mechanics",
-        description: "Refining the dodge and counter-attack systems.",
-        image: "/images/devlog/week2/card3.jpg",
-        fullText: "Combat is deliberate and punishing. We spent this week refining the timing windows for perfect dodges, ensuring that skillful play is properly rewarded with slow-motion counter opportunities."
+        id: "w8-c3",
+        title: "Diseño de Entorno",
+        description: "Estructuración de niveles, interacción y ambientación.",
+        image: "/images/devlog/week8/card3.jpg",
+        fullText: `
+          Se asigna a los diseñadores de entorno la construcción del mundo del juego:
+
+          **Niveles**
+          - Nivel 1  
+          - Nivel 2  
+          - Nivel 3  
+
+          **Interacción**
+          - Diseño de objetos interactivos  
+
+          **Sonido**
+          - Ambientación  
+          - Feedback  
+          - Interacciones  
+
+          Estos elementos definirán la experiencia del jugador.
+                `
+      },
+
+      {
+        id: "w8-c4",
+        title: "Arte conceptual-Diseño y animación",
+        description: "Base visual del estilo artístico del juego.",
+        image: "/images/devlog/week8/card4.jpg",
+        fullText: `
+          Con base en el GDD, se asigna la creación del arte conceptual del proyecto:
+
+          - Diseño de la protagonista  
+          - Diseño de su arma  
+          - Diseño de un enemigo promedio  
+          - Concepto del escenario  
+
+          Todo esto utilizando la paleta de colores definida para establecer la identidad visual del juego.
+                `
+      },
+
+      {
+        id: "w8-c5",
+        title: "Diseño de nivel - Soporte en programación",
+        description: "Planificación de la progresión del jugador.",
+        image: "/images/devlog/week8/card5.jpg",
+        fullText: `
+        Se plantea el diseño de nivel en papel para definir la experiencia del jugador:
+
+        - Planificación de la ruta del jugador  
+        - Ubicación estratégica de enemigos y trampas  
+
+        Se propone dividir el Nivel 1 en tres escenas independientes para:
+
+        - Segmentar el aprendizaje de mecánicas  
+        - Optimizar la carga de recursos  
+
+        Cada escena funcionará como un bloque progresivo donde el jugador aprende habilidades de forma gradual, estableciendo una curva de dificultad controlada.
+              `
       }
     ]
   },
   {
-    week: 3,
-    title: "The First Artifact",
+    week: 9,
+    title: "Primeros avances del desarrollo",
     cards: [
       {
-        id: "w3-c1",
-        title: "The Purple Sphere",
-        description: "Modeling the first major artifact that grants the player a new ability.",
-        image: "/images/devlog/week3/card1.jpg",
-        fullText: "The Purple Sphere is not just an item, but a piece of the protagonist's original divine power. Acquiring it unlocks the 'Shadow Step' ability."
+        id: "w9-c1",
+        title: "Animación",
+        description: "Ilustración y preparación del sistema de animaciones.",
+        image: "/images/devlog/week9/card1.jpg",
+        fullText: `
+          Durante esta semana se desarrollaron las bases visuales del personaje:
+
+          - Ilustración del personaje principal  
+          - Creación del animator del personaje  
+          - Implementación de técnica de rig  
+
+          El animator se estructuró para definir el flujo de animaciones, permitiendo en futuras semanas integrar animaciones personalizadas y facilitar la programación del movimiento.
+
+          También se inició la creación visual de un enemigo.
+                `
       },
+
       {
-        id: "w3-c2",
-        title: "VFX Pass",
-        description: "Adding particle effects and trails to the new abilities.",
-        image: "/images/devlog/week3/card2.jpg",
-        fullText: "A significant VFX pass was done to make the magic feel impactful. Every use of the new ability leaves a dissipating trail of glowing ash."
+        id: "w9-c2",
+        title: "Programación / UI",
+        description: "Configuración del repositorio y bases del sistema.",
+        image: "/images/devlog/week9/card2.jpg",
+        fullText: `
+          Se establecieron las primeras bases técnicas del proyecto:
+
+          🔹 **Control de versiones**
+          - Creación del repositorio en GitHub  
+          - Implementación de ramas de trabajo para el equipo  
+
+          🔹 **Arquitectura del sistema**
+          - Abstracción de atributos del personaje principal  
+
+          Esta estructura permite gestionar el guardado de datos y facilita la modificación o expansión de propiedades del jugador en el futuro.
+                `
       },
+
       {
-        id: "w3-c3",
-        title: "Boss Teaser",
-        description: "A glimpse at the guardian of the first artifact.",
-        image: "/images/devlog/week3/card3.jpg",
-        fullText: "The guardian is a massive, corrupted entity that tests all the skills the player has learned so far. It uses sweeping attacks that require precise use of the newly acquired dodge mechanic."
+        id: "w9-c3",
+        title: "Diseño de entorno",
+        description: "Visualización del nivel mediante referencia audiovisual.",
+        image: "/images/devlog/week9/card3.jpg",
+        fullText: `
+          Se desarrolló una propuesta visual del entorno del juego mediante material audiovisual.
+
+          🎥 **Video de referencia**
+          - Representación del diseño del nivel  
+          - Exploración de la ambientación  
+          - Primera aproximación a la experiencia del jugador  
+
+          Este recurso sirve como guía para futuras implementaciones dentro del motor de juego.
+                `
+      },
+
+      {
+        id: "w9-c4",
+        title: "Arte Conceptual-Diseño y Animación",
+        description: "Sprite de la protagonista:Creación visual y primeras animaciones del personaje.",
+        image: "/images/devlog/week9/card4.jpg",
+        fullText: `
+            A partir del arte conceptual, se desarrolló el sprite de la protagonista:
+
+            - Diseño del sprite final  
+            - Creación de animaciones básicas de movimiento  
+
+            Además, se realizaron ajustes en el animator base dentro de Unity para facilitar su futura integración con la lógica del juego.
+                  `
+      },
+
+      {
+        id: "w9-c5",
+        title: "Diseño de Nivel-Soporte en Programación",
+        description: "Implementación inicial del combate y daño.",
+        image: "/images/devlog/week9/card5.jpg",
+        fullText: `
+          Se comenzó la programación de los sistemas de combate:
+
+          - Desarrollo de la lógica de ataque  
+          - Implementación de parámetros de salud en enemigos  
+          - Definición de daño para enemigos y jefe final  
+
+          Esto establece una base sólida para futuras pruebas de balance y ajustes en la jugabilidad.
+                `
+      }
+    ]
+  },
+  {
+    week: 10,
+    title: "Desarrollo de sistemas y animaciones",
+    cards: [
+      {
+        id: "w10-c1",
+        title: "Animación",
+        description: "Creación de animaciones del personaje y enemigos.",
+        image: "/images/devlog/week10/card1.jpg",
+        fullText: `
+        Se dio inicio al desarrollo de animaciones del personaje principal:
+
+        - Animación idle  
+        - Correr  
+        - Saltar  
+        - Caída  
+        - Ataque  
+
+        En paralelo, se trabajó en los enemigos, desarrollando animaciones clave:
+
+        - Patrullaje  
+        - Movimiento hacia el jugador  
+        - Ataque  
+        - Animación de muerte  
+
+        Estas animaciones permiten dar vida a los personajes y preparar su integración con la lógica del juego.
+              `
+      },
+
+      {
+        id: "w10-c2",
+        title: "Programación / UI",
+        description: "Implementación de sistemas y diseño del menú.",
+        image: "/images/devlog/week10/card2.jpg",
+        fullText: `
+        Se avanzó tanto en diseño de interfaz como en programación de sistemas:
+
+        🔹 **Menú principal**
+        - Definición estética con tonalidades frías (azul y morado)  
+        - Diseño de una interfaz simple alineada al estilo del juego  
+
+        🔹 **Implementación de scripts**
+        Basados en la abstracción definida anteriormente:
+
+        - Sistema de inventario  
+        - Movimiento del personaje  
+        - Persistencia de datos:
+          - GameManager  
+          - GameSession  
+          - UI_Manager  
+        - Clases en C# para guardado de objetos  
+        - IA de enemigos  
+        - Manejo de la UI  
+
+        Esto consolida la base funcional del juego.
+              `
+      },
+
+      {
+        id: "w10-c3",
+        title: "Arte Conceptual-Diseño y Animación",
+        description: "Creación visual de enemigos y jefe del nivel.",
+        image: "/images/devlog/week10/card3.jpg",
+        fullText: `
+        Se desarrolló el apartado visual de los enemigos del juego:
+
+        - Creación de sprites de enemigos básicos  
+        - Diseño final del jefe del primer nivel  
+
+        Estos elementos refuerzan la identidad visual y la variedad de desafíos para el jugador.
+              `
+      },
+
+      {
+        id: "w10-c4",
+        title: "Diseño de Nivel-Soporte en Programación",
+        description: "Estructuración de niveles y configuración del movimiento del personaje.",
+        image: "/images/devlog/week10/card4.jpg",
+        fullText: `
+          Se avanzó tanto en el diseño de niveles como en la programación de los sistemas del personaje:
+
+          🔹 **Diseño de niveles**
+          - Estructura de los tres niveles del juego  
+
+          🔹 **Programación**
+          - Implementación del movimiento del personaje  
+          - Configuración del Animator  
+          - Conexión con el sistema de estados  
+
+          Estos avances sientan las bases para la integración completa del personaje en el entorno.
+                `
       }
     ]
   }

@@ -2,6 +2,28 @@ import React, { useEffect } from 'react';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+const renderFormattedText = (text) => {
+  if (!text) return null;
+  
+  // Limpiar el exceso de indentación de los template literals
+  const lines = text.split('\n').map(line => line.trim());
+  const cleanText = lines.join('\n').trim();
+
+  // Manejar negritas básicas de markdown (**texto**)
+  const parts = cleanText.split(/(\*\*.*?\*\*)/g);
+  
+  return (
+    <div className="whitespace-pre-wrap">
+      {parts.map((part, i) => {
+        if (part.startsWith('**') && part.endsWith('**')) {
+          return <strong key={i} className="text-gameAccent font-bold">{part.slice(2, -2)}</strong>;
+        }
+        return <span key={i}>{part}</span>;
+      })}
+    </div>
+  );
+};
+
 /**
  * DevLogModal Component
  * A full-screen dark overlay modal that displays the full text of a devlog card.
@@ -82,9 +104,9 @@ const DevLogModal = ({ isOpen, card, onClose }) => {
                 <p className="text-lg text-gameGlow italic mb-6 border-l-4 border-gameAccent pl-4 py-1">
                   "{card.description}"
                 </p>
-                <p className="text-sm md:text-base opacity-90">
-                  {card.fullText}
-                </p>
+                <div className="text-sm md:text-base opacity-90">
+                  {renderFormattedText(card.fullText)}
+                </div>
               </motion.div>
             </div>
           </motion.div>
