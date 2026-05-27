@@ -47,12 +47,6 @@ const Header = () => {
                 <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-gameAccent transition-all duration-300 group-hover:w-full group-hover:shadow-[0_0_10px_#A30000]"></span>
               </a>
             ))}
-            <a 
-              href="#join" 
-              className="text-gameAccent hover:text-white font-poppins text-sm uppercase tracking-wider font-bold transition-all duration-300 hover:shadow-[0_0_15px_#A30000] px-4 py-2 border border-gameAccent/30 hover:border-gameAccent rounded-md bg-gameAccent/5 hover:bg-gameAccent/20"
-            >
-              Join Discord
-            </a>
           </nav>
         </div>
       </div>
